@@ -7,12 +7,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name: String = ""
+    
+    @State private var textTitle = "What is your name?"
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("What is your name?")
+                .font(.title)
         }
         .padding()
     }
